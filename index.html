@@ -43,15 +43,29 @@
 
     <h1 class="red">my red title</h1>
 
+    <h1 class="red">my red title</h1>
+
     <!-- p>{click}+a{here}+{to continue} -->
 
     <p>click</p>
     <a href="">here</a>continue
 
+    <p>click
+        <a href="">to continue</a>
+    </p>
+
     <!-- NESTING -->
 
 
     <!-- div>ul>li -->
+
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+    <!--  -->
 
     <div>
         <ul>
@@ -67,6 +81,13 @@
         </ul>
     </div>
 
+    <!--  -->
+
+    <div>
+        <ul>
+            <li>list item 1</li>
+        </ul>
+    </div>
     <!--    multiplication -->
 
     <!-- ul#navigation>li*5>{list item 1} -->
@@ -79,6 +100,15 @@
         <li>list item 1</li>
     </ul>
 
+    <!--  -->
+
+    <ul id="navigation">
+        <li>list item 1</li>
+        <li>list item 1</li>
+        <li>list item 1</li>
+        <li>list item 1</li>
+        <li>list item 1</li>
+    </ul>
     <!-- to add numbers to list $ -->
     <!-- ul#navigation>li*5>{list item $} -->
 
@@ -90,6 +120,18 @@
         <li>list item 5</li>
     </ul>
 
+    <!--  -->
+
+    <ul id="navigation">
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+    </ul>
+
+    <!--  -->
+
 
     <!-- SIBLINGS + -->
 
@@ -99,13 +141,21 @@
     <ul></ul>
     <li></li>
 
+    <!--  -->
+
     <!-- h1.title+p.body -->
 
     <h1 class="title"></h1>
     <p class="body"></p>
 
+    <!--  -->
+
     <!-- div>h1.title+p.body -->
 
+    <h1 class="title"></h1>
+    <p class="body"></p>
+
+    <!--  -->
 
     <div>
         <h1 class="title"></h1>
@@ -115,6 +165,23 @@
     <!-- GROUPING -->
 
     <!-- div(header>ul>li*2>a)+footer>p -->
+
+    <div></div>
+    <header>
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <a href=""></a>
+            </li>
+        </ul>
+    </header>
+    <footer>
+        <p></p>
+    </footer>
+
+    <!--  -->
 
     <div></div>
     <header>
@@ -146,15 +213,23 @@
 
     <form action=""></form>
 
+    <form action=""></form>
+
 
     <!-- form:get -->
+
+    <form action="" method="get"></form>
 
     <form action="" method="get"></form>
 
     <!-- form:post -->
     <form action="" method="post"></form>
 
-    <!-- lable -->
+    <form action="" method="post"></form>
+
+    <!-- label -->
+
+    <label for=""></label>
 
     <label for=""></label>
 
@@ -166,17 +241,23 @@
 
     <input type="text" name="" id="">
 
+    <input type="text" name="" id="">
+
 
     <!-- input:email -->
+    <input type="email" name="" id="">
+
     <input type="email" name="" id="">
 
     <!-- input:s -->
     <input type="submit" value="">
 
+    <input type="submit" value="">
+
     <!-- select -->
     <select name="" id=""></select>
 
-
+    <select name="" id=""></select>
 
 
     <!-- CUSTOMALIASES edit snippets.json file -->
